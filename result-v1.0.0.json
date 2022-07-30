@@ -1,5 +1,5 @@
 {
-  "uid": "ul65oxpx7llw869i70jm",
+  "uid": "ul67yc3bpvz4wfqh7li",
   "className": "WidgetMetaHtml",
   "data": {
     "datamix": {
@@ -393,7 +393,7 @@
         "name": "HTML-компонент",
         "html": "<div class=\"animate\">\n[[cont]]\n</div>",
         "css": "",
-        "meta_js": "//gsap.registerPlugin(ScrollTrigger);\n\nfunction findElement(params){\n\tif(params['is_trigger'] == 'element'){\n\t\treturn el.querySelector(\".animate\");\n\t}\n\tif(params['is_trigger'] == 'class'){\n\t\treturn document.querySelectorAll(params['trigger_class']);\n\t}\n\tthrow new Error('Element not found');\n}\n\n\nconst element = findElement(params);\n\n\n//Конфигурируем TO задержку и продолжительность\nconst crMotionTo = {\n \tdelay : params['to_option_delay']/100,\n\tduration : params['to_option_duration']/100,\n};\n//Добавляем изменеие по осям\nif(params['to_is_translate'] == 'xyz'){\n\tcrMotionTo.x = params['to_option_x'];\n\tcrMotionTo.y = params['to_option_y'];\n\tcrMotionTo.z = params['to_option_z'];\n}\n//Добавляем изменеие по осям в процентах\nif(params['to_is_translate'] == 'percent'){\n\tcrMotionTo.xPercent = params['to_option_x_percent'];\n\tcrMotionTo.yPercent = params['to_option_y_percent'];\n}\n//Добавляем изменения в размере\nif(params['to_is_scale'] == 'all'){\n\tcrMotionTo.scale = params['to_option_scale']/100;\n}\nif(params['to_is_scale'] == 'xy'){\n\tcrMotionTo.scaleX = params['to_option_scale_x']/100;\n\tcrMotionTo.scaleY = params['to_option_scale_y']/100;\n}\n//Добавляем вращение\nif(params['to_is_rotate'] == 'z'){\n\tcrMotionTo.rotation = params['to_option_rotation_z'];\n}\nif(params['to_is_rotate'] == 'xy'){\n\tcrMotionTo.rotationX = params['to_option_rotation_x'];\n\tcrMotionTo.rotationY = params['to_option_rotation_y'];\n}\nif(params['to_is_rotate'] == 'xyz'){\n\tcrMotionTo.rotation = params['to_option_rotation_z'];\n\tcrMotionTo.rotationX = params['to_option_rotation_x'];\n\tcrMotionTo.rotationY = params['to_option_rotation_y'];\n}\n//Добавляем искажение\nif(params['to_is_skew'] == 'xy'){\n\tcrMotionTo.skewX = params['to_option_skew_x'];\n\tcrMotionTo.skewY = params['to_option_skew_y'];\n}\n\n//stagger\nif(params['to_is_stagger'] == 'on'){\n\tcrMotionTo.stagger = params['to_option_stagger'];\n}\n//ease\nif(params['to_is_ease'] == 'on'){\n\tcrMotionTo.ease = params['to_option_ease'];\n}\n//repeat\nif(params['to_is_repeat'] == 'on'){\n\tcrMotionTo.repeat = params['to_option_repeat'];\n\tcrMotionTo.repeatDelay = params['to_option_repeat_delay'];\n}\n//yoyo\nif(params['to_is_yoyo'] == 'on'){\n\tcrMotionTo.yoyo = params['to_option_yoyo'];\n\tcrMotionTo.yoyoEase = params['to_option_yoyo_ease'];\n}\n//more css\nif(params['to_is_more_css'] == 'on'){\n\tcrMotionTo.backgroundColor = params['to_option_background_color'];\n}\n\n\n\n\n\n\n// //Конфигурируем FROM\n// const crMotionFrom = {};\n// if(!params['from_option_x'] == 0){\n// \tcrMotionFrom.x = params['from_option_x'];\n// }\n// if(!params['from_option_y'] == 0){\n// \tcrMotionFrom.y = params['from_option_y'];\n// }\n// if(!params['from_option_rotation'] == 0){\n// \tcrMotionFrom.rotation = params['from_option_rotation'];\n// }\n// if(params['from_option_delay']>0){\n// \tcrMotionFrom.delay = params['from_option_delay'];\n// }\n// if(params['from_option_duration']>0){\n// \tcrMotionFrom.duration = params['from_option_duration'];\n// }\n\n// crMotionTo.scrollTrigger = {\n// \ttrigger: element,\n// \tstart: \"bottom bottom\",\n// \ttoggleActions: \"play pause reverse pause\",\n// \tscrub: 1,\n// };\nconsole.log(crMotionTo);\nif(params['type']==\"to\"){\n\tgsap.to(element, crMotionTo);\n\n}\n// else if(params['type']==\"from\"){\n// \tgsap.from(element, crMotionFrom);\n\n// }else if(params['type']==\"fromto\"){\n// \tgsap.fromTo(element, crMotionTo, crMotionFrom);\n// }",
+        "meta_js": "crUplineAddGSAPAnimation(el,params);",
         "meta_js_lazy": false,
         "meta_js_state": "return {\n  initialState: {},\n  eventListeners: {},\n  reset: function () {},\n};",
         "encapsulation": true,
@@ -405,9 +405,10 @@
         ],
         "meta_cdn": [
           "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
-          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js",
+          "https://cdn.jsdelivr.net/gh/upline/cr-upline-gsap-animation@1.1.2/cdn_cr_upline_gsap_animation.js"
         ],
-        "meta_cdn_sequentially": false,
+        "meta_cdn_sequentially": true,
         "tabs": [
           {
             "id": "ul66ujm8w2tzt3gmi78o",
@@ -420,6 +421,10 @@
           {
             "id": "ul65klon6iy97lqioy5m",
             "name": "Timeline"
+          },
+          {
+            "id": "ul681kyn3b90vvffjek7",
+            "name": "ScrollTrigger"
           }
         ],
         "variables": [
@@ -447,9 +452,22 @@
             "message": "Задайте состояние в которое должна прийти анимация из текущей позиции"
           },
           {
-            "macros": "to_option_delay",
-            "name": "Задержка (delay)",
+            "macros": "to_is_timing",
+            "name": "Задержка и продолжительность",
             "showCondition": "type==\"to\"||type==\"fromto\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_delay",
+            "name": "Задержка (delay) 1s = 100",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_timing=='on'",
             "useInJs": true,
             "tab": "main",
             "type": "number",
@@ -459,14 +477,14 @@
           },
           {
             "macros": "to_option_duration",
-            "name": "Продолжительность (duration)",
-            "showCondition": "type==\"to\"||type==\"fromto\"",
+            "name": "Продолжительность (duration) 1s = 100",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_timing=='on'",
             "useInJs": true,
             "tab": "main",
             "type": "number",
             "min": 0,
             "max": 1000,
-            "value": 150
+            "value": 401
           },
           {
             "macros": "to_is_translate",
@@ -480,7 +498,7 @@
               "xyz": "По осям XYZ",
               "percent": "В процентах по XY"
             },
-            "value": "no"
+            "value": "xyz"
           },
           {
             "macros": "to_option_z",
@@ -502,7 +520,7 @@
             "type": "number",
             "min": -1000,
             "max": 1000,
-            "value": 50
+            "value": -50
           },
           {
             "macros": "to_option_y",
@@ -513,7 +531,7 @@
             "type": "number",
             "min": -1000,
             "max": 1000,
-            "value": 50
+            "value": 0
           },
           {
             "macros": "to_option_x_percent",
@@ -561,10 +579,10 @@
             "type": "number",
             "min": -360,
             "max": 360,
-            "value": 90
+            "value": 15
           },
           {
-            "macros": "to_option_rotation_x_1",
+            "macros": "to_option_rotation_x",
             "name": "Обычное вращение (rotationX)",
             "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_rotate==\"xy\"||to_is_rotate==\"xyz\")",
             "useInJs": true,
@@ -583,7 +601,7 @@
             "type": "number",
             "min": -360,
             "max": 360,
-            "value": 0
+            "value": 20
           },
           {
             "macros": "to_is_scale",
@@ -654,7 +672,7 @@
             "type": "number",
             "min": -100,
             "max": 100,
-            "value": 50
+            "value": 0
           },
           {
             "macros": "to_option_skew_y",
@@ -730,7 +748,7 @@
           },
           {
             "macros": "to_is_repeat",
-            "name": "Повторение анимации (repeat)",
+            "name": "Повторение анимации (Repeat)",
             "showCondition": "(type==\"to\"||type==\"fromto\")",
             "useInJs": true,
             "tab": "main",
@@ -870,6 +888,30 @@
             }
           },
           {
+            "macros": "to_is_perspective",
+            "name": "Настройка перспективы",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_transform_perspective",
+            "name": "Перспектива у элемента",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_perspective==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 100,
+            "max": 1000,
+            "value": 500
+          },
+          {
             "macros": "from_info",
             "name": "Трансформация от позиции",
             "showCondition": "type==\"from\"||type==\"fromto\"",
@@ -886,10 +928,10 @@
             "tab": "ul65klon6iy97lqioy5m",
             "type": "btngroup",
             "values": {
-              "off": "выключено",
-              "on": "включено"
+              "off": "Выкл",
+              "on": "Вкл"
             },
-            "value": "off"
+            "value": "on"
           },
           {
             "macros": "timeline_name",
@@ -902,14 +944,110 @@
           },
           {
             "macros": "timeline_delay",
-            "name": "Delay",
+            "name": "Задержка (Delay) 1s = 100",
             "showCondition": "timeline_status==\"on\"",
             "useInJs": true,
             "tab": "ul65klon6iy97lqioy5m",
             "type": "number",
             "min": 0,
-            "max": 100,
+            "max": 1000,
             "value": 0
+          },
+          {
+            "macros": "is_timeline_repeat",
+            "name": "Повторение анимации (Repeat)",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "timeline_repeat",
+            "name": "Повторения (Repeat) Бесконечно -1",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": -1,
+            "max": 20,
+            "value": -1
+          },
+          {
+            "macros": "timeline_repeat_delay",
+            "name": "Задержка повторения (repeatDelay) 1s = 100",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 10
+          },
+          {
+            "macros": "is_timeline_yoyo",
+            "name": "Эффект YOYO",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "is_timeline_defaults",
+            "name": "Значения по умолчанию (defaults)",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "timeline_duration",
+            "name": "Продолжительность (duration)  1s = 100",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_defaults==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 300
+          },
+          {
+            "macros": "timeline_ease",
+            "name": "Выберете поведение анимации",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_defaults==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "select",
+            "values": {
+              "none": "Нет",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "bounce"
           },
           {
             "macros": "is_trigger",
@@ -931,7 +1069,281 @@
             "useInJs": true,
             "tab": "ul66ujm8w2tzt3gmi78o",
             "type": "string",
-            "value": ".box"
+            "value": ".an_01"
+          },
+          {
+            "macros": "scrolltrigger_status",
+            "name": "Стутас ScrollTrigger",
+            "showCondition": "",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "is_scrolltrigger_trigger",
+            "name": "Что использовать в качестве тригера",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "self": "Сам элемент",
+              "class": "Другой class"
+            },
+            "value": "self"
+          },
+          {
+            "macros": "scrolltrigger_trigger",
+            "name": "Триггер (Например \".example\")",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_trigger==\"class\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_start",
+            "name": "Настройка старта",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_trigger_start_text",
+            "name": "Описание старта анимации",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_start==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_end",
+            "name": "Настройка завершения",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_trigger_end_text",
+            "name": "Описание завершения анимации",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_end==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_scrub",
+            "name": "Плавность анимации",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "scrolltrigger_scrub_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_scrub==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_pin",
+            "name": "Закрепление",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_pin_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_pin==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_toggle_actions",
+            "name": "Описание поведения (попадание, уход, возврат, уход)",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_first_in",
+            "name": "Прокрутка к элементу",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "play"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_first_out",
+            "name": "Прокрутка от элемента",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "pause"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_second_in",
+            "name": "Возврат к элементу",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "play"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_second_out",
+            "name": "Удаление от элемента после возврата",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "reverse"
+          },
+          {
+            "macros": "is_scrolltrigger_toggle_class",
+            "name": "Присвоить активному элементу",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_toggle_class",
+            "name": "Класс (Например \".acitve\")",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_toggle_class==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_fast_scroll_end",
+            "name": "Завершение анимации раньше при выходе из трегра",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "is_scrolltrigger_fast_scroll_end",
+            "name": "Скорость выхода 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_fast_scroll_end==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_markers",
+            "name": "Показать маркеры (для настройки анимации)",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
           }
         ],
         "enable_query": false,
@@ -939,11 +1351,11 @@
       },
       "tabs": {
         "primary": "metahtml",
-        "metahtml__soft": "metahtml__soft_ul66ujm8w2tzt3gmi78o",
-        "metahtml__hard": "metahtml__hard_js"
+        "metahtml__soft": "metahtml__soft_ul681kyn3b90vvffjek7",
+        "metahtml__hard": "metahtml__hard_cdn"
       },
       "toggles": {
-        "metahtml": "soft"
+        "metahtml": "hard"
       }
     },
     "state": {},
@@ -954,7 +1366,7 @@
         },
         "sources": [
           {
-            "uid": "ul65oxpx8gw28c9mfkh9",
+            "uid": "ul67yc3bpnqgwcofj8gr",
             "className": "WidgetImage",
             "data": {
               "datamix": {
