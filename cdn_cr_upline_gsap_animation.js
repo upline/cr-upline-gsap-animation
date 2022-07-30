@@ -20,9 +20,11 @@
     function makeMotionParams(params) {
 //Конфигурируем TO задержку и продолжительность
         const motionParams = {
-            delay: params['option_delay'] / 100,
-            duration: params['option_duration'] / 100,
         };
+        if (params['is_timing'] === 'on') {
+            motionParams.delay = params['option_delay'] / 100;
+            motionParams.duration = params['option_duration'] / 100;
+        }
 //Добавляем изменеие по осям
         if (params['is_translate'] === 'xyz') {
             motionParams.x = params['option_x'];
@@ -89,6 +91,49 @@
         return motionParams;
     }
 
+    function makeScrollTrigger(element,params) {
+        const scrollTrigger = {};
+        if (params['is_scrolltrigger_trigger'] === 'class') {
+            scrollTrigger.trigger = params['scrolltrigger_trigger'];
+        }else{
+            scrollTrigger.trigger = element;
+        }
+        if (params['is_scrolltrigger_start'] === 'on') {
+            scrollTrigger.start = params['scrolltrigger_trigger_start_text'];
+        }
+        if (params['is_scrolltrigger_end'] === 'on') {
+            scrollTrigger.end = params['scrolltrigger_trigger_end_text'];
+        }
+        if (params['is_scrolltrigger_scrub'] === 'on') {
+            scrollTrigger.scrub = true;
+        }
+        if (params['is_scrolltrigger_scrub'] === 'second') {
+            scrollTrigger.scrub = params['scrolltrigger_scrub_second'];
+        }
+        if (params['is_scrolltrigger_pin'] === 'on') {
+            scrollTrigger.pin = true;
+        }
+        if (params['is_scrolltrigger_pin'] === 'second') {
+            scrollTrigger.pin = params['scrolltrigger_pin_second'];
+        }
+        if (params['is_scrolltrigger_markers'] === 'on') {
+            scrollTrigger.markers = true;
+        }
+        if (params['is_scrolltrigger_toggle_actions'] === 'on') {
+            scrollTrigger.toggleActions = params['scrolltrigger_toggle_actions_first_in'] + " " + params['scrolltrigger_toggle_actions_first_out'] + " " + params['scrolltrigger_toggle_actions_second_in'] + " " + params['scrolltrigger_toggle_actions_second_out'];
+        }// other actions: play pause resume reset complete reverse none
+        if (params['is_scrolltrigger_toggle_class'] === 'on') {
+            scrollTrigger.toggleClass = params['scrolltrigger_toggle_class'];
+        }
+        if (params['is_scrolltrigger_fast_scroll_end'] === 'on') {
+            scrollTrigger.fastScrollEnd = true;
+        }
+        if (params['is_scrolltrigger_fast_scroll_end'] === 'second') {
+            scrollTrigger.fastScrollEnd = params['scrolltrigger_fast_scroll_end'];
+        }
+        return scrollTrigger;
+    }
+
     function makeTimelineParams(params) {
         //Конфигурируем TO задержку и продолжительность
         const timelineParams = {
@@ -108,6 +153,9 @@
         //yoyo
         if (params['is_timeline_yoyo'] === 'on') {
             timelineParams.yoyo = true;
+        }
+        if (params['scrolltrigger_status'] === 'on') {
+            timelineParams.scrollTrigger = makeScrollTrigger(params);
         }
         return timelineParams;
     }
@@ -129,7 +177,6 @@
         if (params['timeline_status'] === "on") {
             const timelines = window.crTimelines ||= {};
             const timelineName = params['timeline_name'] || 'cr_global_common';
-
             if (!timelines[timelineName]) {
                 timelines[timelineName] = gsap.timeline(makeTimelineParams(params));
             }
