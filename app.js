@@ -5,4 +5,4 @@
 // 	toggleActions: "play pause reverse pause",
 // 	scrub: 1,
 // };
-crUplineAddGSAPAnimation(el,params)
+crUplineAddGSAPAnimation(el,params);

@@ -116,5 +116,6 @@
             addMotion(params, gsap, element);
         }
     }
+
     window.crUplineAddGSAPAnimation = addAnimation;
 })()
