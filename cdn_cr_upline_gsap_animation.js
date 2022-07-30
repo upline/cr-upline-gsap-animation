@@ -89,6 +89,28 @@
         return motionParams;
     }
 
+    function makeTimelineParams(params) {
+        //Конфигурируем TO задержку и продолжительность
+        const timelineParams = {
+            delay: params['timeline_delay'] / 100
+        };
+        //ease
+        if (params['is_timeline_defaults'] === 'on') {
+            timelineParams.ease = params['timeline_ease'];
+            timelineParams.duration = params['timeline_duration']/ 100;
+        }
+        //repeat
+        if (params['is_timeline_repeat'] === 'on') {
+            timelineParams.repeat = params['timeline_repeat'];
+            timelineParams.repeatDelay = params['timeline_repeat_delay'];
+        }
+        //yoyo
+        if (params['is_timeline_yoyo'] === 'on') {
+            timelineParams.yoyo = true;
+        }
+        return timelineParams;
+    }
+
     function addMotion(params, gsapObject, element) {
         if (params['type'] === "to") {
             gsapObject.to(element, makeMotionParams(getTweenParams(params, 'to')));
@@ -108,7 +130,7 @@
             const timelineName = params['timeline_name'] || 'cr_global_common';
 
             if (!timelines[timelineName]) {
-                timelines[timelineName] = gsap.timeline({repeat: 2, repeatDelay: 1});
+                timelines[timelineName] = gsap.timeline(makeTimelineParams(params));
             }
             const timeline = timelines[timelineName];
             addMotion(params, timeline, element);
