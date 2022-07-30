@@ -17,7 +17,7 @@
         return Object.fromEntries(filteredEntries);
     }
 
-    function makeMotionParams(params) {
+    function makeMotionParams(params,scrollTrigger) {
 //Конфигурируем TO задержку и продолжительность
         const motionParams = {
         };
@@ -88,10 +88,16 @@
         if (params['is_perspective'] === 'on') {
             motionParams.transformPerspective = params['option_transform_perspective'];
         }
+        if (scrollTrigger) {
+            motionParams.scrollTrigger = scrollTrigger;
+        }
         return motionParams;
     }
 
     function makeScrollTrigger(element,params) {
+        if (params['scrolltrigger_status'] === 'off') {
+            return null;
+        }
         const scrollTrigger = {};
         if (params['is_scrolltrigger_trigger'] === 'class') {
             scrollTrigger.trigger = params['scrolltrigger_trigger'];
@@ -134,7 +140,7 @@
         return scrollTrigger;
     }
 
-    function makeTimelineParams(params,element) {
+    function makeTimelineParams(params,scrollTrigger) {
         //Конфигурируем TO задержку и продолжительность
         const timelineParams = {
             delay: params['timeline_delay'] / 100
@@ -154,36 +160,38 @@
         if (params['is_timeline_yoyo'] === 'on') {
             timelineParams.yoyo = true;
         }
-        if (params['scrolltrigger_status'] === 'on') {
-            timelineParams.scrollTrigger = makeScrollTrigger(element,params);
+        if (scrollTrigger) {
+            timelineParams.scrollTrigger = scrollTrigger;
         }
         return timelineParams;
     }
 
-    function addMotion(params, gsapObject, element) {
+    function addMotion(params, gsapObject, element,scrollTrigger) {
         if (params['type'] === "to") {
-            gsapObject.to(element, makeMotionParams(getTweenParams(params, 'to')));
+            gsapObject.to(element, makeMotionParams(getTweenParams(params, 'to'),scrollTrigger));
         }
         if (params['type'] === "from") {
-            gsapObject.from(element, makeMotionParams(getTweenParams(params, 'from')));
+            gsapObject.from(element, makeMotionParams(getTweenParams(params, 'from'),scrollTrigger));
         }
         if (params['type'] === "fromTo") {
-            gsapObject.fromTo(element, makeMotionParams(getTweenParams(params, 'from')), makeMotionParams(getTweenParams(params, 'to')));
+            gsapObject.fromTo(element, makeMotionParams(getTweenParams(params, 'from'),scrollTrigger), makeMotionParams(getTweenParams(params, 'to')));
         }
     }
 
     function addAnimation(el, params) {
         const element = findElement(params, el);
+        const scrollTrigger = makeScrollTrigger(element,params);
         if (params['timeline_status'] === "on") {
             const timelines = window.crTimelines ||= {};
             const timelineName = params['timeline_name'] || 'cr_global_common';
             if (!timelines[timelineName]) {
-                timelines[timelineName] = gsap.timeline(makeTimelineParams(params,element));
+                timelines[timelineName] = gsap.timeline(makeTimelineParams(params,scrollTrigger));
             }
             const timeline = timelines[timelineName];
             addMotion(params, timeline, element);
         } else {
-            addMotion(params, gsap, element);
+            //Уточнить у Лехи нормальная ли идея прокидывать сюда скролтригер
+            addMotion(params, gsap, element,scrollTrigger);
         }
     }
 
