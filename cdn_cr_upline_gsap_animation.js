@@ -96,8 +96,9 @@
         };
         //ease
         if (params['is_timeline_defaults'] === 'on') {
-            timelineParams.ease = params['timeline_ease'];
-            timelineParams.duration = params['timeline_duration']/ 100;
+            timelineParams.defaults = {};
+            timelineParams.defaults.ease = params['timeline_ease'];
+            timelineParams.defaults.duration = params['timeline_duration']/ 100;
         }
         //repeat
         if (params['is_timeline_repeat'] === 'on') {
