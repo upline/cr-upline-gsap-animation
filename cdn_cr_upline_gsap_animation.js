@@ -134,7 +134,7 @@
         return scrollTrigger;
     }
 
-    function makeTimelineParams(params) {
+    function makeTimelineParams(params,element) {
         //Конфигурируем TO задержку и продолжительность
         const timelineParams = {
             delay: params['timeline_delay'] / 100
@@ -155,7 +155,7 @@
             timelineParams.yoyo = true;
         }
         if (params['scrolltrigger_status'] === 'on') {
-            timelineParams.scrollTrigger = makeScrollTrigger(params);
+            timelineParams.scrollTrigger = makeScrollTrigger(element,params);
         }
         return timelineParams;
     }
@@ -178,7 +178,7 @@
             const timelines = window.crTimelines ||= {};
             const timelineName = params['timeline_name'] || 'cr_global_common';
             if (!timelines[timelineName]) {
-                timelines[timelineName] = gsap.timeline(makeTimelineParams(params));
+                timelines[timelineName] = gsap.timeline(makeTimelineParams(params,element));
             }
             const timeline = timelines[timelineName];
             addMotion(params, timeline, element);
