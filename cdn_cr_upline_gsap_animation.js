@@ -166,14 +166,14 @@
         return timelineParams;
     }
 
-    function addMotion(params, gsapObject, element,scrollTrigger) {
+    function addMotion(params, gsapObject, element, scrollTrigger) {
         if (params['type'] === "to") {
             gsapObject.to(element, makeMotionParams(getTweenParams(params, 'to'),scrollTrigger));
         }
         if (params['type'] === "from") {
             gsapObject.from(element, makeMotionParams(getTweenParams(params, 'from'),scrollTrigger));
         }
-        if (params['type'] === "fromTo") {
+        if (params['type'] === "fromto") {
             gsapObject.fromTo(element, makeMotionParams(getTweenParams(params, 'from'),scrollTrigger), makeMotionParams(getTweenParams(params, 'to')));
         }
     }
