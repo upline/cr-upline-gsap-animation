@@ -81,8 +81,12 @@
             motionParams.yoyoEase = params['option_yoyo_ease'];
         }
 //more css
-        if (params['is_more_css'] === 'on') {
+        if (params['is_background'] === 'on') {
             motionParams.backgroundColor = params['option_background_color'];
+        }
+        //more css
+        if (params['is_is_opacity'] === 'on') {
+            motionParams.backgroundColor = params['option_opacity'];
         }
 //transformPerspective
         if (params['is_perspective'] === 'on') {
