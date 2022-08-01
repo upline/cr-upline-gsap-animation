@@ -86,7 +86,7 @@
         }
         //more css
         if (params['is_is_opacity'] === 'on') {
-            motionParams.backgroundColor = params['option_opacity'];
+            motionParams.opacity = params['option_opacity'];
         }
 //transformPerspective
         if (params['is_perspective'] === 'on') {
