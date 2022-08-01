@@ -64,7 +64,7 @@
         }
 //stagger
         if (params['is_stagger'] === 'on') {
-            motionParams.stagger = params['option_stagger'];
+            motionParams.stagger = params['option_stagger']/100;
         }
 //ease
         if (params['is_ease'] === 'on') {
