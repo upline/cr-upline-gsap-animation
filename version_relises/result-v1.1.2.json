@@ -1,0 +1,2721 @@
+{
+  "uid": "ul68cbasyyejtmchl6ts",
+  "className": "WidgetMetaHtml",
+  "data": {
+    "datamix": {
+      "nodebg": "4.2",
+      "widgetpaddings": "4.2",
+      "widgetborders": "4.2",
+      "widgetshadow": "4.2",
+      "widgetfx": "4.2",
+      "widgetparameters": "4.2",
+      "widgetadaptive": "4.2",
+      "metahtml": "4.2",
+      "repeater": "4.2"
+    },
+    "style": {
+      "handlers": "style",
+      "vals": {
+        "bgType": "clear",
+        "bgImage": {
+          "datamix": {
+            "img": "4.2"
+          },
+          "quality": 8,
+          "source": "upload",
+          "resize": true,
+          "legacy_color": [
+            0.55023297764639,
+            1,
+            0.5
+          ],
+          "legacy_pack": "bg-tech",
+          "blur": {
+            "enable": true,
+            "size": 16
+          },
+          "source_id": "",
+          "variable_id": "",
+          "file": "//static.creatium.io/img/bg-tech/1.jpg",
+          "size": [
+            1600,
+            1046
+          ]
+        },
+        "bgImage_Attach": false,
+        "bgImage_Size": "cover",
+        "bgImage_Repeat": "repeat",
+        "bgImage_Valign": "center",
+        "bgImage_Halign": "center",
+        "bgVideo_Source": "youtube",
+        "bgVideo_Youtube": "http://www.youtube.com/watch?v=3oem-M2tQU4",
+        "bgVideo_YoutubeImageSource": "youtube",
+        "bgVideo_YoutubeImage": {
+          "datamix": {
+            "img": "4.2"
+          },
+          "quality": 8,
+          "source": "upload",
+          "resize": true,
+          "legacy_color": [
+            0,
+            1,
+            0.5,
+            1
+          ],
+          "legacy_pack": "users",
+          "blur": {
+            "enable": true,
+            "size": 16
+          },
+          "source_id": "",
+          "variable_id": "",
+          "file": "http://img.youtube.com/vi/3oem-M2tQU4/maxresdefault.jpg",
+          "size": [
+            1920,
+            1080
+          ]
+        },
+        "bgVideo_Mp4": "//static.creatium.io/bgvideo/island.mp4",
+        "bgVideo_Webm": "//static.creatium.io/bgvideo/island.webm",
+        "bgVideo_Ogv": "//static.creatium.io/bgvideo/island.ogv",
+        "bgVideo_DirectImage": {
+          "datamix": {
+            "img": "4.2"
+          },
+          "quality": 8,
+          "source": "upload",
+          "resize": true,
+          "legacy_color": [
+            0,
+            1,
+            0.5,
+            1
+          ],
+          "legacy_pack": "users",
+          "blur": {
+            "enable": true,
+            "size": 16
+          },
+          "source_id": "",
+          "variable_id": "",
+          "file": "//static.creatium.io/bgvideo/island.jpg",
+          "size": [
+            1280,
+            720
+          ]
+        },
+        "bgVideo_Sound": false,
+        "bgColor": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "global",
+          "router": "color"
+        },
+        "bgColor_Alpha": 0.25,
+        "bgColor_Bright": -0.34,
+        "bgBright": -0.5,
+        "bgGradientDirection": "to bottom",
+        "bgGradientColor1": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "global",
+          "router": "color"
+        },
+        "bgGradientColor1_Alpha": 0.8,
+        "bgGradientColor2": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "global",
+          "router": "color"
+        },
+        "bgGradientColor2_Alpha": 0.2,
+        "bgGradientCode": "linear-gradient(90deg, rgba(195,40,34,1) 0%, rgba(222,224,96,1) 50%, rgba(45,253,235,1) 100%)",
+        "bgGradientColorside": "dec",
+        "bgParticlesShapeParticle": "circle",
+        "bgParticlesColorParticle": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "contrast",
+          "contrast": {
+            "type": "frontcolor"
+          },
+          "parent": {
+            "type": "frontcolor"
+          }
+        },
+        "bgParticlesOpacityParticle": 1,
+        "bgParticlesNumberParticle": 80,
+        "bgParticlesSizeParticle": 5,
+        "bgParticlesLink": true,
+        "bgParticlesLinkDistance": 150,
+        "bgParticlesMoveState": true,
+        "bgParticlesMoveSpeed": 2,
+        "bgParticlesMoveDirection": "none",
+        "bgParticlesMoveOutMode": "out",
+        "bgParticlesInteractHoverState": false,
+        "bgParticlesInteractHoverType": "grab",
+        "bgParticlesInteractHoverGrabDistance": 250,
+        "bgParticlesInteractHoverGrabOpacity": 0.8,
+        "bgParticlesInteractHoverRepulseDistance": 150,
+        "bgParticlesInteractHoverBubbleDistance": 150,
+        "bgParticlesInteractHoverBubbleSize": 10,
+        "bgParticlesInteractClickState": false,
+        "bgParticlesInteractClickType": "push",
+        "bgParticlesInteractClickCount": 2,
+        "padTop_x_all": 10,
+        "padTop_x_md": null,
+        "padTop_x_sm": null,
+        "padTop_x_xs": null,
+        "padBottom_x_all": 0,
+        "padBottom_x_md": null,
+        "padBottom_x_sm": null,
+        "padBottom_x_xs": null,
+        "padLeft_x_all": 0,
+        "padLeft_x_md": null,
+        "padLeft_x_sm": null,
+        "padLeft_x_xs": null,
+        "padRight_x_all": 0,
+        "padRight_x_md": null,
+        "padRight_x_sm": null,
+        "padRight_x_xs": null,
+        "borderWidth": 3,
+        "borderRadius": 0,
+        "borderStyle": "none",
+        "borderColor": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "parent",
+          "parent": {
+            "type": "frontcolor"
+          },
+          "router": "color"
+        },
+        "shadow": false,
+        "shadowInset": false,
+        "shadowX": 0,
+        "shadowY": 2,
+        "shadowBlur": 5,
+        "shadowScale": 0,
+        "shadowColor": {
+          "datamix": {
+            "color": "4.2"
+          },
+          "data": [
+            0,
+            0,
+            0
+          ],
+          "global": {
+            "id": 0,
+            "transform": []
+          },
+          "variable": {
+            "source_id": "",
+            "id": "",
+            "transform": [],
+            "basic": [
+              1,
+              1,
+              0.5,
+              1
+            ]
+          },
+          "source": "self",
+          "router": "color"
+        },
+        "shadowAlpha": 0.5,
+        "wow": false,
+        "wowType": "fadeIn",
+        "wowDelay": 0,
+        "hover": false,
+        "hoverType": "hvr-grow-mini",
+        "id": {
+          "datamix": {
+            "ast": "4.2"
+          },
+          "children": []
+        },
+        "classes": {
+          "datamix": {
+            "ast": "4.2"
+          },
+          "children": [
+            {
+              "type": "Code",
+              "code": ""
+            }
+          ]
+        },
+        "showOnXs": true,
+        "showOnSm": true,
+        "showOnMd": true,
+        "showOnLg": true,
+        "showToMembers": true,
+        "showToGuests": true,
+        "showCondition": {
+          "datamix": {
+            "condition": "4.2"
+          },
+          "operator": "and",
+          "conditions": []
+        },
+        "html": "{{content}}\n<div class=\"animate\">\n<div class=\"cont\">2[[cont]]</div>\n<div class=\"img\">3[[img]]</div>\n<div class=\"text\">4[[text]]</div>\n</div>"
+      },
+      "tabs": {
+        "primary": "paddings",
+        "bg": "bg_video_",
+        "bg_particles": "particles_view",
+        "bg_place__soft": "bg_place__soft_main",
+        "bg_place__hard": "bg_place__hard_main",
+        "shadow__soft": "shadow__soft_main",
+        "shadow__hard": "shadow__hard_main",
+        "widgetfx": "widgetfx_wow"
+      },
+      "toggles": {
+        "bg_place": "soft",
+        "shadow": "soft"
+      }
+    },
+    "settings": {
+      "handlers": "settings",
+      "vals": {
+        "name": "Upline GSAP Animation",
+        "html": "<div class=\"animate\">\n[[cont]]\n</div>",
+        "css": "",
+        "meta_js": "crUplineAddGSAPAnimation(el,params);",
+        "meta_js_lazy": false,
+        "meta_js_state": "return {\n  initialState: {},\n  eventListeners: {},\n  reset: function () {},\n};",
+        "encapsulation": true,
+        "embeds": [
+          {
+            "name": "cont",
+            "type": "cont"
+          }
+        ],
+        "meta_cdn": [
+          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
+          "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js",
+          "https://cdn.jsdelivr.net/gh/upline/cr-upline-gsap-animation@1.1.2/cdn_cr_upline_gsap_animation.js"
+        ],
+        "meta_cdn_sequentially": true,
+        "tabs": [
+          {
+            "id": "ul66ujm8w2tzt3gmi78o",
+            "name": "Общие настройки"
+          },
+          {
+            "id": "main",
+            "name": "Анимация Движения"
+          },
+          {
+            "id": "ul65klon6iy97lqioy5m",
+            "name": "Timeline"
+          },
+          {
+            "id": "ul681kyn3b90vvffjek7",
+            "name": "ScrollTrigger"
+          }
+        ],
+        "variables": [
+          {
+            "macros": "type",
+            "name": "Трансформировать",
+            "showCondition": "",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "to": "В (to)",
+              "from": " От (from)",
+              "fromto": "От К (fromTo)"
+            },
+            "value": "to"
+          },
+          {
+            "macros": "to_info",
+            "name": "Трансформация в позицию",
+            "showCondition": "type==\"to\"||type==\"fromto\"",
+            "useInJs": false,
+            "tab": "main",
+            "type": "info",
+            "message": "Задайте состояние в которое должна прийти анимация из текущей позиции"
+          },
+          {
+            "macros": "to_is_timing",
+            "name": "Задержка и продолжительность",
+            "showCondition": "type==\"to\"||type==\"fromto\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "to_option_delay",
+            "name": "Задержка (delay) 1s = 100",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_timing=='on'",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "to_option_duration",
+            "name": "Продолжительность (duration) 1s = 100",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_timing=='on'",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 401
+          },
+          {
+            "macros": "to_is_translate",
+            "name": "Перемещение",
+            "showCondition": "type==\"to\"||type==\"fromto\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "xyz": "По осям XYZ",
+              "percent": "В процентах по XY"
+            },
+            "value": "xyz"
+          },
+          {
+            "macros": "to_option_z",
+            "name": "Перемещение по Z",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "to_option_x",
+            "name": "Перемещение по X",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 500
+          },
+          {
+            "macros": "to_option_y",
+            "name": "Перемещение по Y",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "to_option_x_percent",
+            "name": "xPercent",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_translate==\"percent\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "to_option_y_percent",
+            "name": "yPercent",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_translate==\"percent\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "to_is_rotate",
+            "name": "Поворот (Rotation)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "z": "Обычное вращение",
+              "xy": "Отдельно X Y",
+              "xyz": "Все 3 оси (XYZ)"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "to_option_rotation_z",
+            "name": "Обычное вращение (rotationZ)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_rotate==\"z\"||to_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 15
+          },
+          {
+            "macros": "to_option_rotation_x",
+            "name": "Обычное вращение (rotationX)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_rotate==\"xy\"||to_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 0
+          },
+          {
+            "macros": "to_option_rotation_y",
+            "name": "Обычное вращение (rotationY)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_rotate==\"xy\"||to_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 20
+          },
+          {
+            "macros": "to_is_scale",
+            "name": "Увеличение (Scale)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "all": "Все стороны",
+              "xy": "Отдельно X Y"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "to_option_scale_x",
+            "name": "scaleX (по умолчанию 100%)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_scale==\"xy\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "to_option_scale_y",
+            "name": "scaleY (по умолчанию 100%)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_scale==\"xy\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "to_option_scale",
+            "name": "Scale (по умолчанию 100%)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_scale==\"all\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "to_is_skew",
+            "name": "Искажение (Skew)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "xy": "Вкл X Y"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "to_option_skew_x",
+            "name": "skewX",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_skew==\"xy\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "to_option_skew_y",
+            "name": "skewY",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&(to_is_skew==\"xy\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 50
+          },
+          {
+            "macros": "to_is_stagger",
+            "name": "Шатание (Stagger)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_stagger",
+            "name": "Время начала шатания",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_stagger==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 20,
+            "value": 1
+          },
+          {
+            "macros": "to_is_ease",
+            "name": "Поведение анимации (Ease)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_ease",
+            "name": "Выберете поведение анимации",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_ease==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "select",
+            "values": {
+              "none": "Нет",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "power3"
+          },
+          {
+            "macros": "to_is_repeat",
+            "name": "Повторение анимации (Repeat)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_repeat",
+            "name": "Количество повторений (бесконечно = -1)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1,
+            "max": 100,
+            "value": -1
+          },
+          {
+            "macros": "to_option_repeat_delay",
+            "name": "Задержка повторения (сек.)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 20,
+            "value": 0
+          },
+          {
+            "macros": "to_is_yoyo",
+            "name": "Эффект YOYO",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_yoyo",
+            "name": "Включить (if true > A-B-B-A, if false > A-B-A-B)",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_yoyo==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "checkbox",
+            "value": true
+          },
+          {
+            "macros": "to_option_yoyo_ease",
+            "name": "Поведение анимации в YOYO",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_yoyo==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "select",
+            "values": {
+              "true": "true",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "elastic"
+          },
+          {
+            "macros": "to_is_more_css",
+            "name": "Дополнительные CSS эффекты",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_background_color",
+            "name": "Цвет фона",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_more_css==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "color",
+            "value": {
+              "datamix": {
+                "color": "4.2"
+              },
+              "data": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "global": {
+                "id": 0,
+                "transform": []
+              },
+              "variable": {
+                "source_id": "",
+                "id": "2585",
+                "transform": [
+                  [
+                    "l",
+                    "rel",
+                    -0.2
+                  ]
+                ],
+                "basic": [
+                  1,
+                  1,
+                  0.5,
+                  1
+                ]
+              },
+              "source": "variable-site",
+              "contrast": {
+                "type": "frontcolor"
+              },
+              "parent": {
+                "type": "frontcolor"
+              }
+            }
+          },
+          {
+            "macros": "to_is_perspective",
+            "name": "Настройка перспективы",
+            "showCondition": "(type==\"to\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "to_option_transform_perspective",
+            "name": "Перспектива у элемента",
+            "showCondition": "(type==\"to\"||type==\"fromto\")&&to_is_perspective==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 100,
+            "max": 1000,
+            "value": 500
+          },
+
+
+
+
+
+
+
+
+          {
+            "macros": "from_info",
+            "name": "Трансформация от позиции",
+            "showCondition": "type==\"from\"||type==\"fromto\"",
+            "useInJs": false,
+            "tab": "main",
+            "type": "info",
+            "message": "Задайте состояние от которого пойдет анимация в текущее положение"
+          },
+          {
+            "macros": "from_is_timing",
+            "name": "Задержка и продолжительность",
+            "showCondition": "type==\"from\"||type==\"fromto\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "from_option_delay",
+            "name": "Задержка (delay) 1s = 100",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_timing=='on'",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "from_option_duration",
+            "name": "Продолжительность (duration) 1s = 100",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_timing=='on'",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 401
+          },
+          {
+            "macros": "from_is_translate",
+            "name": "Перемещение",
+            "showCondition": "type==\"from\"||type==\"fromto\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "xyz": "По осям XYZ",
+              "percent": "В процентах по XY"
+            },
+            "value": "xyz"
+          },
+          {
+            "macros": "from_option_z",
+            "name": "Перемещение по Z",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "from_option_x",
+            "name": "Перемещение по X",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 500
+          },
+          {
+            "macros": "from_option_y",
+            "name": "Перемещение по Y",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_translate==\"xyz\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1000,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "from_option_x_percent",
+            "name": "xPercent",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_translate==\"percent\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "from_option_y_percent",
+            "name": "yPercent",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_translate==\"percent\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "from_is_rotate",
+            "name": "Поворот (Rotation)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "z": "Обычное вращение",
+              "xy": "Отдельно X Y",
+              "xyz": "Все 3 оси (XYZ)"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "from_option_rotation_z",
+            "name": "Обычное вращение (rotationZ)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&(from_is_rotate==\"z\"||from_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 15
+          },
+          {
+            "macros": "from_option_rotation_x",
+            "name": "Обычное вращение (rotationX)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&(from_is_rotate==\"xy\"||from_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 0
+          },
+          {
+            "macros": "from_option_rotation_y",
+            "name": "Обычное вращение (rotationY)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&(from_is_rotate==\"xy\"||from_is_rotate==\"xyz\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -360,
+            "max": 360,
+            "value": 20
+          },
+          {
+            "macros": "from_is_scale",
+            "name": "Увеличение (Scale)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "all": "Все стороны",
+              "xy": "Отдельно X Y"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "from_option_scale_x",
+            "name": "scaleX (по умолчанию 100%)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_scale==\"xy\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "from_option_scale_y",
+            "name": "scaleY (по умолчанию 100%)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_scale==\"xy\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "from_option_scale",
+            "name": "Scale (по умолчанию 100%)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_scale==\"all\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 300,
+            "value": 100
+          },
+          {
+            "macros": "from_is_skew",
+            "name": "Искажение (Skew)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "no": "Выкл",
+              "xy": "Вкл X Y"
+            },
+            "value": "no"
+          },
+          {
+            "macros": "from_option_skew_x",
+            "name": "skewX",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&(from_is_skew==\"xy\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 0
+          },
+          {
+            "macros": "from_option_skew_y",
+            "name": "skewY",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&(from_is_skew==\"xy\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -100,
+            "max": 100,
+            "value": 50
+          },
+          {
+            "macros": "from_is_stagger",
+            "name": "Шатание (Stagger)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_stagger",
+            "name": "Время начала шатания",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_stagger==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 20,
+            "value": 1
+          },
+          {
+            "macros": "from_is_ease",
+            "name": "Поведение анимации (Ease)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_ease",
+            "name": "Выберете поведение анимации",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_ease==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "select",
+            "values": {
+              "none": "Нет",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "power3"
+          },
+          {
+            "macros": "from_is_repeat",
+            "name": "Повторение анимации (Repeat)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_repeat",
+            "name": "Количество повторений (бесконечно = -1)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": -1,
+            "max": 100,
+            "value": -1
+          },
+          {
+            "macros": "from_option_repeat_delay",
+            "name": "Задержка повторения (сек.)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 0,
+            "max": 20,
+            "value": 0
+          },
+          {
+            "macros": "from_is_yoyo",
+            "name": "Эффект YOYO",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_yoyo",
+            "name": "Включить (if true > A-B-B-A, if false > A-B-A-B)",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_yoyo==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "checkbox",
+            "value": true
+          },
+          {
+            "macros": "from_option_yoyo_ease",
+            "name": "Поведение анимации в YOYO",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_yoyo==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "select",
+            "values": {
+              "true": "true",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "elastic"
+          },
+          {
+            "macros": "from_is_more_css",
+            "name": "Дополнительные CSS эффекты",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_background_color",
+            "name": "Цвет фона",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_more_css==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "color",
+            "value": {
+              "datamix": {
+                "color": "4.2"
+              },
+              "data": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "global": {
+                "id": 0,
+                "transform": []
+              },
+              "variable": {
+                "source_id": "",
+                "id": "2585",
+                "transform": [
+                  [
+                    "l",
+                    "rel",
+                    -0.2
+                  ]
+                ],
+                "basic": [
+                  1,
+                  1,
+                  0.5,
+                  1
+                ]
+              },
+              "source": "variable-site",
+              "contrast": {
+                "type": "frontcolor"
+              },
+              "parent": {
+                "type": "frontcolor"
+              }
+            }
+          },
+          {
+            "macros": "from_is_perspective",
+            "name": "Настройка перспективы",
+            "showCondition": "(type==\"from\"||type==\"fromto\")",
+            "useInJs": true,
+            "tab": "main",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "from_option_transform_perspective",
+            "name": "Перспектива у элемента",
+            "showCondition": "(type==\"from\"||type==\"fromto\")&&from_is_perspective==\"on\"",
+            "useInJs": true,
+            "tab": "main",
+            "type": "number",
+            "min": 100,
+            "max": 1000,
+            "value": 500
+          },
+
+
+
+          {
+            "macros": "timeline_status",
+            "name": "Статус",
+            "showCondition": "",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "timeline_name",
+            "name": "Timeline Name",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "string",
+            "value": "test"
+          },
+          {
+            "macros": "timeline_delay",
+            "name": "Задержка (Delay) 1s = 100",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_timeline_repeat",
+            "name": "Повторение анимации (Repeat)",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "timeline_repeat",
+            "name": "Повторения (Repeat) Бесконечно -1",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": -1,
+            "max": 20,
+            "value": -1
+          },
+          {
+            "macros": "timeline_repeat_delay",
+            "name": "Задержка повторения (repeatDelay) 1s = 100",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_repeat==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 10
+          },
+          {
+            "macros": "is_timeline_yoyo",
+            "name": "Эффект YOYO",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "is_timeline_defaults",
+            "name": "Значения по умолчанию (defaults)",
+            "showCondition": "timeline_status==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "timeline_duration",
+            "name": "Продолжительность (duration)  1s = 100",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_defaults==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 300
+          },
+          {
+            "macros": "timeline_ease",
+            "name": "Выберете поведение анимации",
+            "showCondition": "timeline_status==\"on\"&&is_timeline_defaults==\"on\"",
+            "useInJs": true,
+            "tab": "ul65klon6iy97lqioy5m",
+            "type": "select",
+            "values": {
+              "none": "Нет",
+              "power1": "power1",
+              "power2": "power2",
+              "power3": "power3",
+              "power4": "power4",
+              "circ": "circ",
+              "expo": "expo",
+              "sine": "sine",
+              "elastic": "elastic",
+              "back": "back",
+              "bounce": "bounce",
+              "rough": "rough",
+              "slow": "slow"
+            },
+            "value": "bounce"
+          },
+          {
+            "macros": "is_trigger",
+            "name": "Что анимируем?",
+            "showCondition": "",
+            "useInJs": true,
+            "tab": "ul66ujm8w2tzt3gmi78o",
+            "type": "btngroup",
+            "values": {
+              "element": "Сам элемент",
+              "class": "Сторонний класс"
+            },
+            "value": "element"
+          },
+          {
+            "macros": "trigger_class",
+            "name": "Класс который будем анимировать (пример \".element\")",
+            "showCondition": "is_trigger==\"class\"",
+            "useInJs": true,
+            "tab": "ul66ujm8w2tzt3gmi78o",
+            "type": "string",
+            "value": ".an_01"
+          },
+          {
+            "macros": "scrolltrigger_status",
+            "name": "Стутас ScrollTrigger",
+            "showCondition": "",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "is_scrolltrigger_trigger",
+            "name": "Что использовать в качестве тригера",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "self": "Сам элемент",
+              "class": "Другой class"
+            },
+            "value": "self"
+          },
+          {
+            "macros": "scrolltrigger_trigger",
+            "name": "Триггер (Например \".example\")",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_trigger==\"class\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_start",
+            "name": "Настройка старта",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "scrolltrigger_trigger_start_text",
+            "name": "Описание старта анимации",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_start==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": "100px 600px"
+          },
+          {
+            "macros": "is_scrolltrigger_end",
+            "name": "Настройка завершения",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_trigger_end_text",
+            "name": "Описание завершения анимации",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_end==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_scrub",
+            "name": "Плавность анимации",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_scrub_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_scrub==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_pin",
+            "name": "Закрепление",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_pin_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_pin==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_toggle_actions",
+            "name": "Описание поведения (попадание, уход, возврат, уход)",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_first_in",
+            "name": "Прокрутка к элементу",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "play"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_first_out",
+            "name": "Прокрутка от элемента",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "pause"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_second_in",
+            "name": "Возврат к элементу",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "play"
+          },
+          {
+            "macros": "scrolltrigger_toggle_actions_second_out",
+            "name": "Удаление от элемента после возврата",
+            "showCondition": "is_scrolltrigger_toggle_actions==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "select",
+            "values": {
+              "play": "play",
+              "pause": "pause",
+              "resume": "resume",
+              "reset": "reset",
+              "complete": "complete",
+              "reverse": "reverse",
+              "none": "none"
+            },
+            "value": "reverse"
+          },
+          {
+            "macros": "is_scrolltrigger_toggle_class",
+            "name": "Присвоить активному элементу",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_toggle_class",
+            "name": "Класс (Например \".acitve\")",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_toggle_class==\"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "string",
+            "value": ""
+          },
+          {
+            "macros": "is_scrolltrigger_fast_scroll_end",
+            "name": "Завершение анимации раньше при выходе из трегра",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "is_scrolltrigger_fast_scroll_end",
+            "name": "Скорость выхода 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_fast_scroll_end==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
+            "macros": "is_scrolltrigger_markers",
+            "name": "Показать маркеры (для настройки анимации)",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "on"
+          }
+        ],
+        "enable_query": false,
+        "query_scheme": "v0.2"
+      },
+      "tabs": {
+        "primary": "metahtml",
+        "metahtml__soft": "metahtml__soft_ul681kyn3b90vvffjek7",
+        "metahtml__hard": "metahtml__hard_cdn"
+      },
+      "toggles": {
+        "metahtml": "soft"
+      }
+    },
+    "state": {},
+    "embeds": {
+      "cont": {
+        "datamix": {
+          "cont": "4.2"
+        },
+        "sources": [
+          {
+            "uid": "ul68cbasziw33q658hvh",
+            "className": "WidgetImage",
+            "data": {
+              "datamix": {
+                "nodebg": "4.2",
+                "widgetpaddings": "4.2",
+                "widgetborders": "4.2",
+                "widgetshadow": "4.2",
+                "widgetfx": "4.2",
+                "widgetparameters": "4.2",
+                "widgetadaptive": "4.2"
+              },
+              "style": {
+                "handlers": "style",
+                "vals": {
+                  "bgType": "clear",
+                  "bgImage": {
+                    "datamix": {
+                      "img": "4.2"
+                    },
+                    "quality": 8,
+                    "source": "upload",
+                    "resize": true,
+                    "legacy_color": [
+                      0.55023297764639,
+                      1,
+                      0.5
+                    ],
+                    "legacy_pack": "bg-tech",
+                    "blur": {
+                      "enable": true,
+                      "size": 16
+                    },
+                    "source_id": "",
+                    "variable_id": "",
+                    "file": "//static.creatium.io/img/bg-tech/1.jpg",
+                    "size": [
+                      1600,
+                      1046
+                    ]
+                  },
+                  "bgImage_Attach": false,
+                  "bgImage_Size": "cover",
+                  "bgImage_Repeat": "repeat",
+                  "bgImage_Valign": "center",
+                  "bgImage_Halign": "center",
+                  "bgVideo_Source": "youtube",
+                  "bgVideo_Youtube": "http://www.youtube.com/watch?v=3oem-M2tQU4",
+                  "bgVideo_YoutubeImageSource": "youtube",
+                  "bgVideo_YoutubeImage": {
+                    "datamix": {
+                      "img": "4.2"
+                    },
+                    "quality": 8,
+                    "source": "upload",
+                    "resize": true,
+                    "legacy_color": [
+                      0,
+                      1,
+                      0.5,
+                      1
+                    ],
+                    "legacy_pack": "users",
+                    "blur": {
+                      "enable": true,
+                      "size": 16
+                    },
+                    "source_id": "",
+                    "variable_id": "",
+                    "file": "http://img.youtube.com/vi/3oem-M2tQU4/maxresdefault.jpg",
+                    "size": [
+                      1920,
+                      1080
+                    ]
+                  },
+                  "bgVideo_Mp4": "//static.creatium.io/bgvideo/island.mp4",
+                  "bgVideo_Webm": "//static.creatium.io/bgvideo/island.webm",
+                  "bgVideo_Ogv": "//static.creatium.io/bgvideo/island.ogv",
+                  "bgVideo_DirectImage": {
+                    "datamix": {
+                      "img": "4.2"
+                    },
+                    "quality": 8,
+                    "source": "upload",
+                    "resize": true,
+                    "legacy_color": [
+                      0,
+                      1,
+                      0.5,
+                      1
+                    ],
+                    "legacy_pack": "users",
+                    "blur": {
+                      "enable": true,
+                      "size": 16
+                    },
+                    "source_id": "",
+                    "variable_id": "",
+                    "file": "//static.creatium.io/bgvideo/island.jpg",
+                    "size": [
+                      1280,
+                      720
+                    ]
+                  },
+                  "bgVideo_Sound": false,
+                  "bgColor": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "global",
+                    "router": "color"
+                  },
+                  "bgColor_Alpha": 0.25,
+                  "bgColor_Bright": 0,
+                  "bgBright": -0.5,
+                  "bgGradientDirection": "to bottom",
+                  "bgGradientColor1": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "global",
+                    "router": "color"
+                  },
+                  "bgGradientColor1_Alpha": 0.8,
+                  "bgGradientColor2": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "global",
+                    "router": "color"
+                  },
+                  "bgGradientColor2_Alpha": 0.2,
+                  "bgGradientCode": "linear-gradient(90deg, rgba(195,40,34,1) 0%, rgba(222,224,96,1) 50%, rgba(45,253,235,1) 100%)",
+                  "bgGradientColorside": "dec",
+                  "bgParticlesShapeParticle": "circle",
+                  "bgParticlesColorParticle": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "contrast",
+                    "contrast": {
+                      "type": "frontcolor"
+                    },
+                    "parent": {
+                      "type": "frontcolor"
+                    }
+                  },
+                  "bgParticlesOpacityParticle": 1,
+                  "bgParticlesNumberParticle": 80,
+                  "bgParticlesSizeParticle": 5,
+                  "bgParticlesLink": true,
+                  "bgParticlesLinkDistance": 150,
+                  "bgParticlesMoveState": true,
+                  "bgParticlesMoveSpeed": 2,
+                  "bgParticlesMoveDirection": "none",
+                  "bgParticlesMoveOutMode": "out",
+                  "bgParticlesInteractHoverState": false,
+                  "bgParticlesInteractHoverType": "grab",
+                  "bgParticlesInteractHoverGrabDistance": 250,
+                  "bgParticlesInteractHoverGrabOpacity": 0.8,
+                  "bgParticlesInteractHoverRepulseDistance": 150,
+                  "bgParticlesInteractHoverBubbleDistance": 150,
+                  "bgParticlesInteractHoverBubbleSize": 10,
+                  "bgParticlesInteractClickState": false,
+                  "bgParticlesInteractClickType": "push",
+                  "bgParticlesInteractClickCount": 2,
+                  "padTop_x_all": 0,
+                  "padTop_x_md": null,
+                  "padTop_x_sm": null,
+                  "padTop_x_xs": null,
+                  "padBottom_x_all": 0,
+                  "padBottom_x_md": null,
+                  "padBottom_x_sm": null,
+                  "padBottom_x_xs": null,
+                  "padLeft_x_all": 0,
+                  "padLeft_x_md": null,
+                  "padLeft_x_sm": null,
+                  "padLeft_x_xs": null,
+                  "padRight_x_all": 0,
+                  "padRight_x_md": null,
+                  "padRight_x_sm": null,
+                  "padRight_x_xs": null,
+                  "borderWidth": 3,
+                  "borderRadius": 0,
+                  "borderStyle": "none",
+                  "borderColor": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "parent",
+                    "parent": {
+                      "type": "frontcolor"
+                    },
+                    "router": "color"
+                  },
+                  "shadow": false,
+                  "shadowInset": false,
+                  "shadowX": 0,
+                  "shadowY": 2,
+                  "shadowBlur": 5,
+                  "shadowScale": 0,
+                  "shadowColor": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "self",
+                    "router": "color"
+                  },
+                  "shadowAlpha": 0.5,
+                  "wow": false,
+                  "wowType": "fadeIn",
+                  "wowDelay": 0,
+                  "hover": false,
+                  "hoverType": "hvr-grow-mini",
+                  "id": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": []
+                  },
+                  "classes": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": [
+                      {
+                        "type": "Code",
+                        "code": ""
+                      }
+                    ]
+                  },
+                  "showOnXs": true,
+                  "showOnSm": true,
+                  "showOnMd": true,
+                  "showOnLg": true,
+                  "showToMembers": true,
+                  "showToGuests": true,
+                  "showCondition": {
+                    "datamix": {
+                      "condition": "4.2"
+                    },
+                    "operator": "and",
+                    "conditions": []
+                  }
+                },
+                "tabs": {
+                  "primary": "paddings",
+                  "bg": "bg_video_",
+                  "bg_particles": "particles_view",
+                  "bg_place__soft": "bg_place__soft_main",
+                  "bg_place__hard": "bg_place__hard_main",
+                  "shadow__soft": "shadow__soft_main",
+                  "shadow__hard": "shadow__hard_main",
+                  "widgetfx": "widgetfx_wow"
+                },
+                "toggles": {
+                  "bg_place": "soft",
+                  "shadow": "soft"
+                }
+              },
+              "settings": {
+                "handlers": "settings",
+                "vals": {
+                  "src": {
+                    "datamix": {
+                      "img": "4.2"
+                    },
+                    "quality": 8,
+                    "source": "upload",
+                    "resize": true,
+                    "legacy_color": [
+                      0,
+                      1,
+                      0.5,
+                      1
+                    ],
+                    "legacy_pack": "users",
+                    "blur": {
+                      "enable": true,
+                      "size": 16
+                    },
+                    "source_id": "",
+                    "variable_id": "",
+                    "file": "https://i.1.creatium.io/c4/53/23/02e4cef79184b631fab2a8d9f71de0d0e9/snimok_ekrana_2022_07_28_v_13_47_22.png",
+                    "size": [
+                      1647,
+                      742
+                    ]
+                  },
+                  "type": "normal",
+                  "action": "none",
+                  "group": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": [
+                      {
+                        "type": "Code",
+                        "code": ""
+                      }
+                    ]
+                  },
+                  "link": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": [
+                      {
+                        "type": "Code",
+                        "code": ""
+                      }
+                    ]
+                  },
+                  "newtab": false,
+                  "nofollow": false,
+                  "align_x_all": "center",
+                  "align_x_md": null,
+                  "align_x_sm": null,
+                  "align_x_xs": null,
+                  "bgsize": "contain",
+                  "normalradius": 0,
+                  "roundradius": 100,
+                  "size_x_all": 30,
+                  "size_x_md": null,
+                  "size_x_sm": null,
+                  "size_x_xs": null,
+                  "height_x_all": 100,
+                  "height_x_md": null,
+                  "height_x_sm": null,
+                  "height_x_xs": null,
+                  "alt": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": [
+                      {
+                        "type": "Code",
+                        "code": ""
+                      }
+                    ]
+                  },
+                  "title": {
+                    "datamix": {
+                      "ast": "4.2"
+                    },
+                    "children": [
+                      {
+                        "type": "Code",
+                        "code": ""
+                      }
+                    ]
+                  },
+                  "effectColor": {
+                    "datamix": {
+                      "color": "4.2"
+                    },
+                    "data": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "global": {
+                      "id": 0,
+                      "transform": []
+                    },
+                    "variable": {
+                      "source_id": "",
+                      "id": "",
+                      "transform": [],
+                      "basic": [
+                        1,
+                        1,
+                        0.5,
+                        1
+                      ]
+                    },
+                    "source": "global"
+                  },
+                  "effectAlpha": 0.5,
+                  "effectType": "VegaFx",
+                  "effectScale": true,
+                  "effectRoundradius": 0,
+                  "html": "{{content}}\n<div class=\"animate\">\n<div class=\"cont\">2[[cont]]</div>\n<div class=\"img\">3[[img]]</div>\n<div class=\"text\">4[[text]]</div>\n</div>"
+                },
+                "tabs": {
+                  "primary": "main"
+                }
+              }
+            },
+            "multilandings": [],
+            "variants": [],
+            "virtualHeight": {
+              "lg": 223,
+              "md": 500,
+              "sm": 500,
+              "xs": 500
+            },
+            "redactor": "4.2",
+            "redactor_patch": 4
+          }
+        ],
+        "tplname": "cont"
+      }
+    },
+    "templates": {
+      "cont": {
+        "datamix": {
+          "cont": "4.2"
+        },
+        "sources": [],
+        "tplname": "cont"
+      },
+      "text": {
+        "datamix": {
+          "html": "4.2"
+        },
+        "html": {
+          "datamix": {
+            "ast": "4.2"
+          },
+          "children": [
+            {
+              "type": "Code",
+              "code": "Редактируемый текст"
+            }
+          ]
+        },
+        "tag": "p",
+        "lg": {
+          "override": {
+            "align": true,
+            "font": true,
+            "size": true,
+            "intervals": true,
+            "columns": true,
+            "color": true
+          },
+          "align": "left",
+          "font": "font-text",
+          "size": 16,
+          "intervals": {
+            "leading": 1.4,
+            "tracking": 0
+          },
+          "columns": {
+            "count": 1,
+            "gap": 20
+          },
+          "color": {
+            "datamix": {
+              "color": "4.2"
+            },
+            "data": [
+              0,
+              0,
+              0
+            ],
+            "global": {
+              "id": 0,
+              "transform": [
+                [
+                  "l",
+                  "rel",
+                  0
+                ]
+              ]
+            },
+            "variable": {
+              "source_id": "",
+              "id": "",
+              "transform": [],
+              "basic": [
+                1,
+                1,
+                0.5,
+                1
+              ]
+            },
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "md": {
+          "override": {
+            "align": false,
+            "font": false,
+            "size": false,
+            "intervals": false,
+            "columns": false,
+            "color": false
+          },
+          "align": "left",
+          "font": "font-text",
+          "size": 16,
+          "intervals": {
+            "leading": 1.4,
+            "tracking": 0
+          },
+          "columns": {
+            "count": 1,
+            "gap": 20
+          },
+          "color": {
+            "datamix": {
+              "color": "4.2"
+            },
+            "data": [
+              0,
+              0,
+              0
+            ],
+            "global": {
+              "id": 0,
+              "transform": [
+                [
+                  "l",
+                  "rel",
+                  0
+                ]
+              ]
+            },
+            "variable": {
+              "source_id": "",
+              "id": "",
+              "transform": [],
+              "basic": [
+                1,
+                1,
+                0.5,
+                1
+              ]
+            },
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "sm": {
+          "override": {
+            "align": false,
+            "font": false,
+            "size": false,
+            "intervals": false,
+            "columns": false,
+            "color": false
+          },
+          "align": "left",
+          "font": "font-text",
+          "size": 16,
+          "intervals": {
+            "leading": 1.4,
+            "tracking": 0
+          },
+          "columns": {
+            "count": 1,
+            "gap": 20
+          },
+          "color": {
+            "datamix": {
+              "color": "4.2"
+            },
+            "data": [
+              0,
+              0,
+              0
+            ],
+            "global": {
+              "id": 0,
+              "transform": [
+                [
+                  "l",
+                  "rel",
+                  0
+                ]
+              ]
+            },
+            "variable": {
+              "source_id": "",
+              "id": "",
+              "transform": [],
+              "basic": [
+                1,
+                1,
+                0.5,
+                1
+              ]
+            },
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "xs": {
+          "override": {
+            "align": false,
+            "font": false,
+            "size": false,
+            "intervals": false,
+            "columns": false,
+            "color": false
+          },
+          "align": "left",
+          "font": "font-text",
+          "size": 16,
+          "intervals": {
+            "leading": 1.4,
+            "tracking": 0
+          },
+          "columns": {
+            "count": 1,
+            "gap": 20
+          },
+          "color": {
+            "datamix": {
+              "color": "4.2"
+            },
+            "data": [
+              0,
+              0,
+              0
+            ],
+            "global": {
+              "id": 0,
+              "transform": [
+                [
+                  "l",
+                  "rel",
+                  0
+                ]
+              ]
+            },
+            "variable": {
+              "source_id": "",
+              "id": "",
+              "transform": [],
+              "basic": [
+                1,
+                1,
+                0.5,
+                1
+              ]
+            },
+            "source": "contrast",
+            "contrast": {
+              "type": "frontcolor"
+            },
+            "inherit": false,
+            "opacity": 1
+          }
+        },
+        "tplname": "text"
+      },
+      "icon": {
+        "datamix": {
+          "rawsvgicon": "4.2"
+        },
+        "handlers": "rawsvgicon",
+        "vals": {
+          "src": {
+            "datamix": {
+              "icon": "4.2"
+            },
+            "file": "//static.creatium.io/svg/icons-thin/controls-33.svg",
+            "pack": "old-thin",
+            "size": [
+              256,
+              256
+            ],
+            "svg": "<style type=\"text/css\"><![CDATA[ .st0{fill:none;stroke:#231F20;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} ]]></style><polygon class=\"st0\" points=\"30.001,2.421 38.965,20.576 59,23.49 44.499,37.622 47.922,57.579 30.001,48.156 12.076,57.579 15.5,37.622 1,23.49 21.041,20.576 \"/>",
+            "folder": "all",
+            "style": "",
+            "viewbox": [
+              0,
+              0,
+              60,
+              60
+            ],
+            "source": "upload"
+          }
+        },
+        "tplname": "icon"
+      },
+      "image": {
+        "datamix": {
+          "rawimage": "4.2"
+        },
+        "handlers": "rawimage",
+        "vals": {
+          "src": {
+            "datamix": {
+              "img": "4.2"
+            },
+            "quality": 8,
+            "source": "upload",
+            "resize": true,
+            "legacy_color": [
+              0,
+              1,
+              0.5,
+              1
+            ],
+            "legacy_pack": "users",
+            "blur": {
+              "enable": true,
+              "size": 16
+            },
+            "source_id": "",
+            "variable_id": "",
+            "file": "//i.1.creatium.io/plp/u0.plpstatic.ru/63d3a6c9689d0a310bdb33ba48a9f341/194594eafe8a83db5eb472d202544c73.png",
+            "size": [
+              477,
+              500
+            ]
+          }
+        },
+        "tplname": "image"
+      }
+    },
+    "cells": {
+      "query": {
+        "select": "*",
+        "from": null,
+        "where": {
+          "operator": "and",
+          "filters": [],
+          "ignore_empty": true
+        },
+        "order": [],
+        "limit": 10,
+        "limit_dev": 20,
+        "skip": 0
+      },
+      "variable": "table"
+    }
+  },
+  "multilandings": [],
+  "variants": [],
+  "virtualHeight": {
+    "lg": 233,
+    "md": 500,
+    "sm": 500,
+    "xs": 500
+  },
+  "redactor": "4.2",
+  "redactor_patch": 4
+}
