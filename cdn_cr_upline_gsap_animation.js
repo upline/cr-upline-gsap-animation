@@ -73,7 +73,7 @@
 //repeat
         if (params['is_repeat'] === 'on') {
             motionParams.repeat = params['option_repeat'];
-            motionParams.repeatDelay = params['option_repeat_delay'];
+            motionParams.repeatDelay = params['option_repeat_delay']/100;
         }
 //yoyo
         if (params['is_yoyo'] === 'on') {
@@ -81,12 +81,14 @@
             motionParams.yoyoEase = params['option_yoyo_ease'];
         }
 //more css
-        if (params['is_background'] === 'on') {
-            motionParams.backgroundColor = params['option_background_color'];
-        }
-        //more css
-        if (params['is_opacity'] === 'on') {
-            motionParams.opacity = params['option_opacity']/100;
+        if (params['is_more_css'] === 'on') {
+            if (params['is_background'] === 'on') {
+                motionParams.backgroundColor = params['option_background_color'];
+            }
+            //more css
+            if (params['is_opacity'] === 'on') {
+                motionParams.opacity = params['option_opacity']/100;
+            }
         }
 //transformPerspective
         if (params['is_perspective'] === 'on') {
