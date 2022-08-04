@@ -406,7 +406,7 @@
         "meta_cdn": [
           "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js",
           "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js",
-          "https://cdn.jsdelivr.net/gh/upline/cr-upline-gsap-animation@1.1.8/cdn_cr_upline_gsap_animation.js"
+          "https://cdn.jsdelivr.net/gh/upline/cr-upline-gsap-animation@1.2.0/cdn_cr_upline_gsap_animation.js"
         ],
         "meta_cdn_sequentially": true,
         "tabs": [
@@ -656,7 +656,7 @@
           },
           {
             "macros": "from_is_skew",
-            "name": "Искажение (Skew)",
+            "name": "Наклон (Skew)",
             "showCondition": "(type==\"from\"||type==\"fromto\")",
             "useInJs": true,
             "tab": "main",
