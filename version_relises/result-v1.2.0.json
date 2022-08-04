@@ -1689,56 +1689,6 @@
             "value": ""
           },
           {
-            "macros": "is_scrolltrigger_scrub",
-            "name": "Плавность анимации",
-            "showCondition": "scrolltrigger_status == \"on\"",
-            "useInJs": true,
-            "tab": "ul681kyn3b90vvffjek7",
-            "type": "btngroup",
-            "values": {
-              "off": "Выкл",
-              "on": "Вкл",
-              "second": "В секундах"
-            },
-            "value": "off"
-          },
-          {
-            "macros": "scrolltrigger_scrub_second",
-            "name": "Продолжительность плавности 1s = 100",
-            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_scrub==\"second\"",
-            "useInJs": true,
-            "tab": "ul681kyn3b90vvffjek7",
-            "type": "number",
-            "min": 0,
-            "max": 1000,
-            "value": 0
-          },
-          {
-            "macros": "is_scrolltrigger_pin",
-            "name": "Закрепление",
-            "showCondition": "scrolltrigger_status == \"on\"",
-            "useInJs": true,
-            "tab": "ul681kyn3b90vvffjek7",
-            "type": "btngroup",
-            "values": {
-              "off": "Выкл",
-              "on": "Вкл",
-              "second": "В секундах"
-            },
-            "value": "off"
-          },
-          {
-            "macros": "scrolltrigger_pin_second",
-            "name": "Продолжительность плавности 1s = 100",
-            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_pin==\"second\"",
-            "useInJs": true,
-            "tab": "ul681kyn3b90vvffjek7",
-            "type": "number",
-            "min": 0,
-            "max": 1000,
-            "value": 0
-          },
-          {
             "macros": "is_scrolltrigger_toggle_actions",
             "name": "Описание поведения (попадание, уход, возврат, уход)",
             "showCondition": "scrolltrigger_status == \"on\"",
@@ -1824,6 +1774,44 @@
             "value": "reverse"
           },
           {
+            "macros": "is_scrolltrigger_markers",
+            "name": "Показать маркеры (для настройки анимации)",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "is_scrolltrigger_scrub",
+            "name": "Плавность анимации",
+            "showCondition": "scrolltrigger_status == \"on\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "btngroup",
+            "values": {
+              "off": "Выкл",
+              "on": "Вкл",
+              "second": "В секундах"
+            },
+            "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_scrub_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_scrub==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
+          },
+          {
             "macros": "is_scrolltrigger_toggle_class",
             "name": "Присвоить активному элементу",
             "showCondition": "scrolltrigger_status == \"on\"",
@@ -1861,7 +1849,7 @@
           },
           {
             "macros": "scrolltrigger_fast_scroll_end",
-            "name": "Скорость выхода 1s = 100",
+            "name": "Скорость прокрутки при которой активируется остановка анимации 1s = 100",
             "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_fast_scroll_end==\"second\"",
             "useInJs": true,
             "tab": "ul681kyn3b90vvffjek7",
@@ -1871,17 +1859,29 @@
             "value": 0
           },
           {
-            "macros": "is_scrolltrigger_markers",
-            "name": "Показать маркеры (для настройки анимации)",
+            "macros": "is_scrolltrigger_pin",
+            "name": "Закрепление",
             "showCondition": "scrolltrigger_status == \"on\"",
             "useInJs": true,
             "tab": "ul681kyn3b90vvffjek7",
             "type": "btngroup",
             "values": {
               "off": "Выкл",
-              "on": "Вкл"
+              "on": "Вкл",
+              "second": "В секундах"
             },
             "value": "off"
+          },
+          {
+            "macros": "scrolltrigger_pin_second",
+            "name": "Продолжительность плавности 1s = 100",
+            "showCondition": "scrolltrigger_status == \"on\"&&is_scrolltrigger_pin==\"second\"",
+            "useInJs": true,
+            "tab": "ul681kyn3b90vvffjek7",
+            "type": "number",
+            "min": 0,
+            "max": 1000,
+            "value": 0
           },
           {
             "macros": "module_name",
@@ -1899,7 +1899,7 @@
             "useInJs": false,
             "tab": "ul6c5x2f6ny5qk2htk1p",
             "type": "info",
-            "message": "1.1.7"
+            "message": "1.2.0"
           },
           {
             "macros": "module_info",
