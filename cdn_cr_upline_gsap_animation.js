@@ -9,6 +9,16 @@
         }
         throw new Error('Element not found');
     }
+    //Получаем объект который будем анимировать
+    function findElementToScrollTriger(params, el) {
+        if (params['is_trigger'] === 'element') {
+            return el.querySelector(".animate");
+        }
+        if (params['is_trigger'] === 'class') {
+            return document.querySelector(params['trigger_class']);
+        }
+        throw new Error('Element not found');
+    }
 
     function getTweenParams(params, tween) {
         const filteredEntries = Object.entries(params)
@@ -186,7 +196,8 @@
 
     function addAnimation(el, params) {
         const element = findElement(params, el);
-        const scrollTrigger = makeScrollTrigger(element,params);
+        const elementSCT = findElementToScrollTriger(params, el);
+        const scrollTrigger = makeScrollTrigger(elementSCT,params);
         if (params['timeline_status'] === "on") {
             const timelines = window.crTimelines ||= {};
             const timelineName = params['timeline_name'] || 'cr_global_common';
