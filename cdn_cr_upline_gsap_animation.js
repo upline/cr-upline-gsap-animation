@@ -46,10 +46,10 @@
         if(type === 'bottom'){
             return 'bottom';
         }
-        if(params['transform_origin_vertical'] === 'percent'){
+        if(percent === 'percent'){
             return `${percent}%`;
         }
-        if(params['transform_origin_vertical'] === 'pixel'){
+        if(percent === 'pixel'){
             return `${pixel}px`;
         }
         return '50%';
