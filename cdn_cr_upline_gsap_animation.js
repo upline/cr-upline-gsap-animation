@@ -134,8 +134,8 @@
         }
 //transformOrigin
         if (params['is_transform_origin'] === 'on') {
-            const transformOriginHorizontal = parsePosition(params['transform_origin_horizontal'],params['transform_origin_horizontal_percent'],params['transform_origin_horizontal_pixel']);
-            const transformOriginVertical = parsePosition(params['transform_origin_vertical'],params['transform_origin_vertical_percent'],params['transform_origin_vertical_pixel']);
+            const transformOriginHorizontal = parsePosition(params['is_transform_origin_horizontal'],params['transform_origin_horizontal_percent'],params['transform_origin_horizontal_pixel']);
+            const transformOriginVertical = parsePosition(params['is_transform_origin_vertical'],params['transform_origin_vertical_percent'],params['transform_origin_vertical_pixel']);
             motionParams.transformPerspective = `${transformOriginHorizontal} ${transformOriginVertical}`;
         }
 
