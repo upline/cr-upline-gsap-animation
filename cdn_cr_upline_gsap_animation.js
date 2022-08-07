@@ -18,6 +18,43 @@
         return Object.fromEntries(filteredEntries);
     }
 
+    function parseInOut(value){
+        if(value==='in'){
+            return 'in';
+        }
+        if(value==='out'){
+            return 'out';
+        }
+        if(value==='inout'){
+            return 'inOut';
+        }
+    }
+
+    function parsePosition(type,percent,pixel){
+        if (type === 'left') {
+            return 'left';
+        }
+        if (type === 'right') {
+            return 'right';
+        }
+        if (type === 'top') {
+            return 'top';
+        }
+        if(type === 'center'){
+            return '50%';
+        }
+        if(type === 'bottom'){
+            return 'bottom';
+        }
+        if(params['transform_origin_vertical'] === 'percent'){
+            return `${percent}%`;
+        }
+        if(params['transform_origin_vertical'] === 'pixel'){
+            return `${pixel}px`;
+        }
+        return '50%';
+    }
+
     function makeMotionParams(params,scrollTrigger) {
 //Конфигурируем TO задержку и продолжительность
         const motionParams = {
@@ -69,7 +106,7 @@
         }
 //ease
         if (params['is_ease'] === 'on') {
-            motionParams.ease = params['option_ease'];
+            motionParams.ease = `${params['option_ease']}.${parseInOut(params['option_ease_in_out'])}`;
         }
 //repeat
         if (params['is_repeat'] === 'on') {
@@ -79,7 +116,7 @@
 //yoyo
         if (params['is_yoyo'] === 'on') {
             motionParams.yoyo = params['option_yoyo'];
-            motionParams.yoyoEase = params['option_yoyo_ease'];
+            motionParams.yoyoEase = `${params['option_yoyo_ease']}.${parseInOut(params['option_ease_in_out'])}`;
         }
 //more css
         if (params['is_more_css'] === 'on') {
@@ -95,6 +132,13 @@
         if (params['is_perspective'] === 'on') {
             motionParams.transformPerspective = params['option_transform_perspective'];
         }
+//transformOrigin
+        if (params['is_transform_origin'] === 'on') {
+            const transformOriginHorizontal = parsePosition(params['transform_origin_horizontal'],params['transform_origin_horizontal_percent'],params['transform_origin_horizontal_pixel']);
+            const transformOriginVertical = parsePosition(params['transform_origin_vertical'],params['transform_origin_vertical_percent'],params['transform_origin_vertical_pixel']);
+            motionParams.transformPerspective = `${transformOriginHorizontal} ${transformOriginVertical}`;
+        }
+
         if (scrollTrigger) {
             motionParams.scrollTrigger = scrollTrigger;
         }
@@ -155,7 +199,7 @@
         //ease
         if (params['is_timeline_defaults'] === 'on') {
             timelineParams.defaults = {};
-            timelineParams.defaults.ease = params['timeline_ease'];
+            timelineParams.defaults.ease = `${params['timeline_ease']}.${parseInOut(params['option_ease_in_out'])}`;
             timelineParams.defaults.duration = params['timeline_duration']/ 100;
         }
         //repeat
